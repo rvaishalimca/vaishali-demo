@@ -1,87 +1,62 @@
+/* //reset layoyut // */
+
 html,
 body,
 .container {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
 }
 
-h1,
+div,
+ul,
 li,
 a,
-ul,
-header,
-section,
-.left-pic,
-.right-con,
-footer {
-    margin: 0%;
-    padding: 0%;
+table,
+h1 {
+    padding: 0;
+    margin: 0;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
+
+/* //ends reset layout// */
+
+body {
+    background-color: lightblue;
 }
 
-.header {
-    flex: 10%;
-    /* border-bottom: 1px solid brown; */
-    background-image: url("../images/pp.jpg");
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.navigation {
+    height: 10%;
+    background-color: red;
 }
 
-.header ul li {
-    border: 2px solid red;
-    border-radius: 25px;
+.navigation ul {
+    list-style-type: none;
+    height: 100%;
+    width: 98%;
+    padding: 1vw;
+}
+
+.navigation ul li {
     display: inline;
-    background-color: salmon;
-    padding: 10px;
-    margin: 10px;
+    margin: 2vw;
 }
 
-.header ul li a {
+.navigation ul li a {
     text-decoration: none;
+    border: 1px solid green;
+    padding: 0.3vw 2vw;
+    border-radius: 10px;
 }
 
-.header ul li :hover {
-    background-color: greenyellow;
-    color: royalblue;
+.section-content {
+    height: 90%;
+    background-color: #ffffff;
 }
 
-.section {
-    flex: 80%;
-    /* border-bottom: 1px solid brown; */
-    display: flex;
-    flex-direction: row;
-}
 
-.left-pic,
-.right-con {
-    flex: 1;
-    /* border: 1px solid brown; */
-    overflow: auto;
-    /* margin: 5px; */
-    /* padding: 5px; */
-}
-
-.left-pic {
-    background-image: url("../images/oo.jpg"), url("../images/vaishali.jpg");
-    /* border: 1px solid palevioletred; */
-}
-
-.right-con {
-    /* background-color: pink; */
-    background-image: url(" ../images/oo.jpg");
-}
-
-.footer {
-    flex: 10%;
-    border-bottom: 1px solid brown;
-    background-image: url("../images/pp.jpg"), url("../images/bb.jpg");
-    background-color: url()
-}
+/* #content-page,
+#email-page {
+    display: none;
+} */
